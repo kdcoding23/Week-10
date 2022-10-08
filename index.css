@@ -1,0 +1,13 @@
+.container {
+    background-color: rgb(219, 193, 255);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/*image looked the same before and after adding img-responsive class and properties but I added them just in case so the image can scale as nicely as possible within the card */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}

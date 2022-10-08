@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Study App</title>
+</head>
+<body class="container">
+    <br>
+    <!-- FORM -->
+    <div class="card border-info">
+        <div class="card-header">Study App</div>
+        <img class="card-img-top img-responsive" src="https://i.pinimg.com/564x/0b/ef/5f/0bef5f5e52ba4bcf36865eba75a5ebb7.jpg" alt="illustration by freepik of a front-end developer">
+        <div class="card-body">
+            <p>Keep track of study to-dos! Add new tasks and delete them when you are done! </p>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-due-date">Due Date</label>
+                        <input type="date" class="form-control" id="new-due-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Task</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Task">
+                    </div>
+                </div>
+            </div>
+            <!-- BUTTON -->
+            <div>
+                <button id="add" class="btn btn-info form-control">Create</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- TABLE -->
+    <div class="table-responsive">
+        <table id="list" class="table table-light table-hover table-striped">
+            <tr>
+                <th>Task</th>
+                <th>Date Created</th>
+                <th>Start Date</th>
+                <th>Due Date</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
